@@ -249,4 +249,26 @@ animation:spin 1s linear infinite;
 100%{
 transform:rotate(360deg);
 }
+} 
+.admin-box{
+padding:20px;
+}
+
+.service-box{
+background:#fff;
+padding:20px;
+border-radius:20px;
+text-align:center;
+margin-bottom:15px;
+}
+
+.service-box button{
+width:100%;
+padding:12px;
+border:none;
+background:#000;
+color:#fff;
+border-radius:10px;
+margin-top:10px;
+cursor:pointer;
 }
