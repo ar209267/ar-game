@@ -3,35 +3,36 @@
 import { initializeApp }
 from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 
-import {
-getAuth
-}
+import { getAuth }
 from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-import {
-getDatabase
-}
+import { getDatabase }
 from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+import { getAnalytics }
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
 
 const firebaseConfig = {
 
-apiKey: "YOUR_API_KEY",
+apiKey: "AIzaSyC5i7SOEJeFO8NsO7VbIU63rfRBrGwBWQY",
 
-authDomain: "YOUR_AUTH_DOMAIN",
+authDomain: "online-shop-ar.firebaseapp.com",
 
-databaseURL: "YOUR_DATABASE_URL",
+projectId: "online-shop-ar",
 
-projectId: "YOUR_PROJECT_ID",
+storageBucket: "online-shop-ar.firebasestorage.app",
 
-storageBucket: "YOUR_STORAGE_BUCKET",
+messagingSenderId: "913434308973",
 
-messagingSenderId: "YOUR_MSG_ID",
+appId: "1:913434308973:web:d0b1f8f7dda8c64f586a64",
 
-appId: "YOUR_APP_ID"
+measurementId: "G-T20TRS2F59"
 
 };
 
 const app = initializeApp(firebaseConfig);
+
+const analytics = getAnalytics(app);
 
 export const auth = getAuth(app);
 
