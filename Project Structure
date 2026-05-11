@@ -1,0 +1,20 @@
+Atiq-SMM-V5/
+│
+├── index.html
+├── dashboard.html
+├── admin.html
+├── style.css
+├── app.js
+├── firebase.js
+├── auth.js
+├── payment.js
+├── services.js
+├── admin.js
+│
+├── assets/
+│   ├── logo.png
+│   ├── banner.jpg
+│   └── avatar.png
+│
+└── database/
+    └── rules.txt
