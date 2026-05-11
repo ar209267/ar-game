@@ -1,54 +1,61 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="bn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Atiq rocky Panel V4 Ultra Pro</title>
+
+<title>Atiq SMM Panel V5 Ultra</title>
 
 <link rel="stylesheet" href="style.css">
+
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<script type="module" src="app.js"></script>
+<script type="module" src="firebase.js"></script>
+<script type="module" src="auth.js"></script>
+<script type="module" src="payment.js"></script>
+<script type="module" src="services.js"></script>
+
 </head>
 
 <body>
 
-<!-- LOADER -->
-<div id="loader">
-    <div class="spin"></div>
-</div>
-
 <!-- HEADER -->
 <header class="topbar">
 
-    <div class="logo-area">
-        <h1>Atiq SMM</h1>
-        <span class="badge">V4 ULTRA</span>
-    </div>
+<div class="logo-area">
 
-    <div class="right-box">
+<h1>Atiq SMM</h1>
 
-        <div class="balance-card">
-            <small>Balance</small>
-            <h2 id="balance">৳ 0</h2>
-        </div>
+<span class="badge">V5 ULTRA</span>
 
-        <div class="avatar">
-            A
-        </div>
+</div>
 
-    </div>
+<div class="right-box">
+
+<div class="balance-card">
+
+<small>Balance</small>
+
+<h2 id="balance">৳ 0</h2>
+
+</div>
+
+<div class="avatar">
+A
+</div>
+
+</div>
 
 </header>
 
 <!-- MAIN -->
 <div class="container">
 
-<!-- LEFT -->
+<!-- LEFT SIDE -->
 <div class="left-side">
 
+<!-- SERVICES -->
 <div class="glass-card">
 
 <h3>
@@ -56,81 +63,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 All Services
 </h3>
 
-<div class="service-grid">
+<div id="serviceContainer"
+class="service-grid">
 
-<!-- SERVICE -->
-<div class="service-box">
-<i class="fab fa-facebook"></i>
-<h4>Facebook Followers</h4>
-<p>5K Real Followers</p>
-<span>৳130</span>
-<button onclick="buyService('Facebook Followers')">
-Buy Now
-</button>
-</div>
-
-<div class="service-box">
-<i class="fab fa-instagram"></i>
-<h4>Instagram Followers</h4>
-<p>1K Real Followers</p>
-<span>৳95</span>
-<button onclick="buyService('Instagram Followers')">
-Buy Now
-</button>
-</div>
-
-<div class="service-box">
-<i class="fab fa-youtube"></i>
-<h4>YouTube Subscribers</h4>
-<p>1K Subscribers</p>
-<span>৳850</span>
-<button onclick="buyService('YouTube Subscribers')">
-Buy Now
-</button>
-</div>
-
-<div class="service-box">
-<i class="fab fa-tiktok"></i>
-<h4>TikTok Views</h4>
-<p>10K Views</p>
-<span>৳90</span>
-<button onclick="buyService('TikTok Views')">
-Buy Now
-</button>
-</div>
-
-<div class="service-box">
-<i class="fa-solid fa-gem"></i>
-<h4>Free Fire Diamonds</h4>
-<p>1000 Diamonds</p>
-<span>৳720</span>
-<button onclick="buyService('Free Fire Diamonds')">
-Buy Now
-</button>
-</div>
-
-<div class="service-box">
-<i class="fab fa-telegram"></i>
-<h4>Telegram Members</h4>
-<p>1000 Members</p>
-<span>৳120</span>
-<button onclick="buyService('Telegram Members')">
-Buy Now
-</button>
 </div>
 
 </div>
-</div>
 
-<!-- ORDER HISTORY -->
+<!-- HISTORY -->
 <div class="glass-card">
 
 <h3>
 <i class="fa-solid fa-clock-rotate-left"></i>
 Recent Orders
 </h3>
-
-<div id="history">
 
 <div class="history-item">
 Facebook Followers - Pending
@@ -144,9 +90,7 @@ YouTube Subscribers - Completed
 
 </div>
 
-</div>
-
-<!-- RIGHT -->
+<!-- RIGHT SIDE -->
 <div class="right-side">
 
 <!-- DEPOSIT -->
@@ -161,11 +105,13 @@ Quick Deposit
 01763609391
 </div>
 
-<input type="text"
+<input
+type="text"
 id="trx"
 placeholder="Transaction ID">
 
-<input type="number"
+<input
+type="number"
 id="amount"
 placeholder="Amount">
 
@@ -180,14 +126,16 @@ Add Balance
 
 <h3>
 <i class="fa-solid fa-user"></i>
-User Login
+Login / Register
 </h3>
 
-<input type="email"
+<input
+type="email"
 id="email"
-placeholder="Email">
+placeholder="Email Address">
 
-<input type="password"
+<input
+type="password"
 id="password"
 placeholder="Password">
 
@@ -201,12 +149,36 @@ Create Account
 
 </div>
 
+<!-- SUPPORT -->
+<div class="glass-card">
+
+<h3>
+<i class="fa-solid fa-headset"></i>
+Live Support
+</h3>
+
+<p>
+24/7 Support Available
+</p>
+
+<button class="support-btn">
+Open Ticket
+</button>
+
+</div>
+
 </div>
 
 </div>
 
-<!-- NOTIFICATION -->
-<div id="toast"></div>
+<!-- FOOTER -->
+<footer class="footer">
+
+<p>
+© 2026 Atiq SMM Panel V5 Ultra
+</p>
+
+</footer>
 
 </body>
 </html>
